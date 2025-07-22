@@ -106,3 +106,18 @@ public class Main {
     }
 }
 
+
+7=>
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long N = scanner.nextLong();
+
+        long sum = N * (N + 1) / 2;//مجموع الارقام
+
+        System.out.println(sum);
+    }
+}
