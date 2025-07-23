@@ -188,3 +188,124 @@ public class Main {
     }
 }
 
+11=> 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        int A = scanner.nextInt();
+        int B = scanner.nextInt();
+        int C = scanner.nextInt();
+
+        
+        int min = A;
+        int max = A;
+
+       
+        if (B < min) {
+            min = B;
+        }
+        if (B > max) {
+            max = B;
+        }
+
+       
+        if (C < min) {
+            min = C;
+        }
+        if (C > max) {
+            max = C;
+        }
+
+        
+        System.out.println(min + " " + max);
+    }
+}
+
+11=> 
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+      
+        String F1 = scanner.next();
+        String S1 = scanner.next();
+
+        
+        String F2 = scanner.next();
+        String S2 = scanner.next();
+
+        
+        if (S1.equals(S2)) {
+            System.out.println("ARE Brothers");
+        } else {
+            System.out.println("NOT");
+        }
+    }
+}
+
+
+12=>
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       
+        char X = scanner.next().charAt(0);
+
+       
+        
+        if (X >= '0' && X <= '9') {
+            System.out.println("IS DIGIT");
+        } 
+        
+        else if ((X >= 'A' && X <= 'Z') || (X >= 'a' && X <= 'z')) {
+            System.out.println("ALPHA");
+            if (X >= 'A' && X <= 'Z') {
+                System.out.println("IS CAPITAL");
+            } else {
+                System.out.println("IS SMALL");
+            }
+        }
+    }
+}
+
+
+13=>
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        char X = scanner.next().charAt(0);
+
+     
+        if (X >= 'a' && X <= 'z') {
+            
+            char upper = (char)(X - 32);
+            System.out.println(upper);
+        } else if (X >= 'A' && X <= 'Z') {
+            
+            char lower = (char)(X + 32);
+            System.out.println(lower);
+        }
+    }
+}
+
