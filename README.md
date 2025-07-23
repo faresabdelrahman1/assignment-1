@@ -121,3 +121,70 @@ public class Main {
         System.out.println(sum);
     }
 }
+
+8 =>
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int A = scanner.nextInt();
+        int B = scanner.nextInt();
+
+     
+        double result = (double) A / B;
+
+      
+      //  System.out.println("floor " + A + " / " + B + " = " + (int) Math.floor(result));
+       // System.out.println("ceil " + A + " / " + B + " = " + (int) Math.ceil(result));
+       // System.out.println("round " + A + " / " + B + " = " + Math.round(result));
+    }
+}
+
+
+9=>
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        int A = scanner.nextInt();
+        int B = scanner.nextInt();
+
+       
+        if (A >= B) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
+
+
+10=>
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+       
+        int A = scanner.nextInt();
+        int B = scanner.nextInt();
+        if (A % B == 0 || B % A == 0) {
+            System.out.println("Multiples");
+        } else {
+            System.out.println("No Multiples");
+        }
+    }
+}
+
